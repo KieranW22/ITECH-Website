@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Digital Images</title>
+
+<link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes="16x16">
+
+<link href="ITEC_Website_Styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="page">
+	
+	<header>
+		<img class="headerBox" src="images/logo.jpg" alt="All About ITECH logo" style="height: 150px;"><br>
+		<h1 class="headerBox" id="title">All About ITECH!</h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html"><span>Home</span></a></li>
+			<li><a href="digital_images.html"><span>Digital Images</span></a></li>
+			<li><a href="sound_audio.html"><span>Sound &amp; Audio Processing</span></a></li>
+			<li><a href="networks.html"><span>Networks</span></a></li>
+			<li><a href="web_standards.html"><span>Web Standards</span></a></li>
+		</ul>
+	</nav>
+	
+	<div class="mainText">
+	<h1>Digital Images</h1>
+	<article>
+		<h3 id="colour">Colour</h3>
+		<p>
+			Colour can be perceived differently by individual to others. This is because we have a spectrum of colours formed by electromagnetic radiation. The human visual system can detect light between the region of 400-700nm.<br><br>
+			<img class="displayed" src="images/linear_visible_spectrum.png" alt="linear spectrum image" width="700px">
+			<!-- Image above is released in the Public Domain. Source: https://commons.wikimedia.org/wiki/File:Linear_visible_spectrum.svg -->
+		</p>
+		<h4>Tri-Stimulus Theory</h4>
+		<p>This theory states that: <em>"Any colour can be specified by just 3 values; Red, Green and Blue"</em>. This relates to how the human eye works with rods, that are used in low light, and cones, which identify colour.</p>
+		
+		<h4>RGB Colour</h4>
+		<p>
+			You can more or less create any colour using a mixture of red, green and blue. They are known as 'additive' primary colours. RGB colour is used where light is being generated, for instance, display equipment like a computer monitor.
+		</p>
+		
+		<h4>CMYK Colour</h4>
+		<p>
+			Stands for Cyan, Magenta, Yellow and Black. <em>&#40;Black is denoted by 'K' to not get confused with 'B' for blue&#41;</em>. It is used where light is being replected, like in a painting or print media.
+		</p>
+	</article>
+	
+	<article>
+		<h3 id="pixels">Pixels</h3>
+		<p>
+			Pixels are square-sixed elements that make up display equipment. The word 'Pixel' is made from two parts - Picture &#40;pix&#41; and Elements &#40;els&#41;. Each pixel can denote a colour by using reserved channels for RGB. A huge number of pixels join together on a display to create a merged illusion to the user which produces a continuous tone of colour.
+		</p>
+	</article>
+	
+	<article>
+		<h3 id="bitmapVsvector">Bitmapped vs. Vector Graphics</h3>
+		<table width="80%" border="1" align="center">
+  			<caption>
+   			 A table comparing Bitmapped and Vector images
+  			</caption>
+  			<tbody>
+    			<tr>
+     			  <th scope="col">Bitmapped</th>
+      			  <th scope="col">Vector</th>
+    			</tr>
+    			<tr>
+     			 <td>Discrete pixel values</td>
+     			 <td>Mathematical expressions</td>
+    			</tr>
+    			<tr>
+    			  <td>Direct mapping of pixel values</td>
+     			  <td>Computation of pixels using graphics<br>library</td>
+    			</tr>
+    			<tr>
+      			  <td>Logical pixels > Physical pixels</td>
+      			  <td>Example: 2 co-ordinates is a line</td>
+   			 	</tr>
+   			 	<tr>
+      			  <td>Used for complex shapes &amp; patterns</td>
+      			  <td>Used for simple shapes &amp; patterns</td>
+   			 	</tr>
+  			</tbody>
+		</table>
+	</article>
+	
+	<article>
+		<h3 id="colourbitdepth">Colour Bit-Depth</h3>
+		<p>
+			In the RGB model, three number sare used to represent a certain colour in the spectrum. Each number is relative to the others, so for instance, there can be more red than blue, equal amounts of all three, no amount of any colour etc.
+		</p>
+		<p>There are several different bit-depths that can be used:</p>
+		<table width="80%" border="1" align="center">
+  			<tbody>
+    			<tr>
+			      <th scope="col">1-bit Black &amp; White</th>
+			      <th scope="col">8-bit Web Safe</th>
+			      <th scope="col">24-bit True Colour</th>
+			    </tr>
+			    <tr>
+			      <td>Each pixel is 1-bit of memory</td>
+				  <td>Each pixel is 8-bits of memory</td>
+			      <td>Each pixel is 24-bits of memory</td>
+			    </tr>
+			    <tr>
+			      <td>2 combinations - black/white - newspapers</td>
+			      <td>256 combinations - multiple colours - basic graphics</td>
+			      <td>16.8 million combinations!</td>
+			    </tr>
+			  </tbody>
+		</table>		
+	</article>
+	
+	<article>
+		<h3 id="colournotation">Colour Notation</h3>
+		<p>
+			We use notations in order to identify and store a colour's value more easily. For each of red, green and blue, a hexadecimal value is stored.<br>
+			E.g. White is &#40;255,255,255&#41; which becomes #FFFFFF
+		</p>
+		<img src="images/photoshop_slider.PNG" alt="Photoshop colour slider" height="200px">
+		<img src="images/photoshop_slider_red.PNG" alt="Photoshop colour slider on red" height="200px">
+	</article>
+	
+	<article>
+		<h3 id="resolution">Resolution</h3>
+		<p>
+			The word 'resolution' can refer to either the dimensions or the density of an image.
+		</p>
+		<table width="100%" border="0">
+			<tbody>
+				<tr>
+					<th scope="col">Pixel Dimensions</th>
+					<th scope="col">Pixel Density</th>
+				</tr>
+				<tr>
+					<td>
+						<ul>
+							<li>Total number of pixels</li>
+							<li>Specified as Width and Height</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Number of elements per unit</li>
+							<li>Density measured in pixels per inch &#40;e.g. Monitor - 72 ppi&#41;</li>
+							<li>Printers &amp; Scanners use dots per inch &#40;e.g. 600 dpi&#41;</li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<p>The output of diplay equipments depends on the pixel density of that device.</p>
+	</article>
+	
+	<article>
+		<h3 id="manipulation">Image Manipulation</h3>
+		<h4>Vector Manipulation</h4>
+		<p>
+			You can manipulate vector graphics using 'affine transformations'. They include:
+			<ul>
+				<li>Scaling</li>
+				<li>Rotating</li>
+				<li>Reflecting</li>
+			</ul>
+		</p>
+		
+		<h4>Bitmap Manipulation</h4>
+		<p>
+			You can change the dimensions of a bitmap by:
+			<ul>
+				<li>changing pixel density</li>
+				<li>changing pixel dimensions</li>
+			</ul>
+			Change the pixel dimensions requires you to calculate the new image size. This is known as 'Resampling'.
+		</p>
+		<p>
+			There are three methods of scaling bitmaps. You can find out more about them <a target="_blank" href="http://www.tinaja.com/glib/pixintpl.pdf">here</a>.
+		</p>
+		
+		<h4>File Size Calculations</h4>
+		<p>
+			To calculate how much memory you will need to store a uncompressed image, you can perform the following calculation: Width (W) * Height (H) * Bit-Depth (X)
+		</p>
+		
+		<h4>Compression</h4>
+		<p>
+			If we want to reduce the file size, we can use compression. There are two types:<br><br>
+			<em>Lossless</em>
+			<ul>
+				<li>Data is re-organised</li>
+				<li>Requires more memory</li>
+			</ul>
+			<em>Lossy</em>
+			<ul>
+				<li>Data is discarded</li>
+				<li>An approximation of the image remains</li>
+				<li>Requires less memory</li>
+			</ul>
+		</p>
+		
+		<h4>File Types</h4>
+		<p>
+			File types encode data in different ways. Some examples are: JPEG, GIF, PNG. The extension of a file identifies its file type.
+		</p>
+	</article>
+	
+
+	
+	
+	
+	</div>
+	
+	<footer>by Kieran Widdowson</footer>
+	
+</div>
+	
+</body>
+</html>

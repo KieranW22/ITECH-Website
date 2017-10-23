@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+div.page {
+	border: 1px solid black;
+	margin: auto;
+	width: 80%;
+}
+
+.mainText {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+header, footer {
+	background-color: black;
+	color: white;
+	padding: 1em;
+	clear: left;
+	text-align: center;
+}
+
+nav {
+	margin: auto;
+	text-align: center;
+	border-bottom: 1px solid black;
+	line-height: 30px;
+	
+}
+
+nav span {
+	padding: 5px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline-flex;
+	margin-left: 10px;
+}
+
+menu a {
+	
+}
+
+.headerBox {
+	display: inline-block;
+	margin: 10px;
+}
+
+section {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.topics {
+	width: 220px;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	text-align: center;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+img.displayed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

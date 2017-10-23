@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sound &amp; Audio Processing</title>
+
+<link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes="16x16">
+
+<link href="ITEC_Website_Styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div class="page">
+	
+	<header>
+		<img class="headerBox" src="images/logo.jpg" alt="All About ITECH logo" style="height: 150px;"><br>
+		<h1 class="headerBox" id="title">All About ITECH!</h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html"><span>Home</span></a></li>
+			<li><a href="digital_images.html"><span>Digital Images</span></a></li>
+			<li><a href="sound_audio.html"><span>Sound &amp; Audio Processing</span></a></li>
+			<li><a href="networks.html"><span>Networks</span></a></li>
+			<li><a href="web_standards.html"><span>Web Standards</span></a></li>
+		</ul>
+	</nav>
+	
+	<div class="mainText">
+	<h1>Sound &amp; Audio Processing</h1>
+	<article>
+		<h3 id="soundwaves">Sound Waves</h3>
+		<p>
+			Sound waves have a set of characteristics:
+			<dl>
+				<dt>Amplitude</dt>
+				<dd>Strength of the wave in dB. This is the loudness of the sound.</dd>
+				<dt>Frequency</dt>
+				<dd>Number of cycles per second in Hz. This is the pitch.</dd>
+				<dt>Wavelength</dt>
+				<dd>Distance travelled in one cycle</dd>
+				<dt>Period</dt>
+				<dd>Time for one cycle</dd>
+			</dl>
+		</p>
+	</article>
+	
+	<article>
+		<h3 id="perception">Audio Perception</h3>
+		<p>
+			The Human Ear can detect sound between 20Hz and 20,000Hz. The sound pressure level is what we can hear and it is measured in decibels.
+		</p>
+		<p>
+			Some examples of real world sounds are:
+			<ul>
+				<li>Breathing: 10dB</li>
+				<li>Whisper: 30dB</li>
+				<li>Conversation: 60dB</li>
+				<li>Niagra Falls: 90dB</li>
+				<li>Rock Concert: 120dB</li>
+				<li>Rocket Engine: 180dB</li>
+			</ul>
+			120db is the point at which you can start to experience pain due to the intensity of the sound pressure.
+		</p>
+	</article>
+	
+	<article>
+		<h3 id="sampling">Digital Audio Sampling</h3>
+		<p>
+			There are two key parameters needed to represent an analogue signal as a digital signal:
+			<ul>
+				<li>Sampling rate: number of samples per second</li>
+				<li>Resolution: number of sampling levels for storage</li>
+			</ul>
+		</p>
+		<h4>Principle 1</h4>
+		<p>
+			The amplitue can be sampled at regular intervals. This is measured in Hz &#40;e.g. CD = 44.1kHz&#41;
+		</p>
+		<h4>Principle 2</h4>
+		<p>
+			Quantization is used to distinguish what state a signal is in. E.g. Amplitudes of 1-4 become a 0, amplitudes of 5-8 become a 1
+		</p>
+		<h4>Principle 3</h4>
+		<p>
+			If you put samples together you can create a copy of the sound. This means you have converted from analogue to digital. However, this can cause a loss of quality in the sound.
+		</p>
+	</article>
+	
+	<article>
+		<h3 id="filters">Filters</h3>
+		<p>
+			Used to remove unwanted sounds from an audio file.<br><br>
+			<img src="images/filter.PNG" height="200px" alt="filtered audio">
+		</p>
+	</article>
+	
+	<article>
+		<h4 id="filesizes">File Size</h4>
+		<p>
+			The file size of an uncompressed audio track can be calculated using:<br><br>
+			Bit-Rate = <em>Sampling Rate * Resolution * No. of Channels * Time (sec) / Bits per Kilo-Bit</em><br>
+			File size = <em>Bit-Rate * Track Length (sec) / 8</em>
+		</p>
+	</article>
+	
+	<article>
+		<h4 id="compression">Compression</h4>
+		<p>
+			Compression can be used to reduce the overall size of a file, for example, when transmitting the file over the Internet. MP3 compression works by removing data that has no effect on how the sound is heard.
+		</p>
+	</article>
+	
+	
+	</div>
+	
+	<footer>by Kieran Widdowson</footer>
+	
+</div>
+
+</body>
+</html>

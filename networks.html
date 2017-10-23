@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Networks</title>
+
+<link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes="16x16">
+
+<link href="ITEC_Website_Styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="page">
+	
+	<header>
+		<img class="headerBox" src="images/logo.jpg" alt="All About ITECH logo" style="height: 150px;"><br>
+		<h1 class="headerBox" id="title">All About ITECH!</h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html"><span>Home</span></a></li>
+			<li><a href="digital_images.html"><span>Digital Images</span></a></li>
+			<li><a href="sound_audio.html"><span>Sound &amp; Audio Processing</span></a></li>
+			<li><a href="networks.html"><span>Networks</span></a></li>
+			<li><a href="web_standards.html"><span>Web Standards</span></a></li>
+		</ul>
+	</nav>
+	
+	<div class="mainText">
+		<h1>Networks</h1>
+		<article>
+			<h3 id="networkmedia">Network Media</h3>
+			<p>
+				Computer networks can make use of different types of network media. The two types are:
+				<ul>
+					<li>Nodes: PC, Server, Switch, Bridge, Router</li>
+					<li>Links: Optic fibers, Coaxial cable, Wireless</li>
+				</ul>
+			</p>
+		</article>
+		
+		<article>
+			<h3 id="protocols">Protocols</h3>
+			<p>
+				Protocols are a set of rules that allows devices to communicate over a network. Internet protocols include high level protocols like, TCP, UDP, HTTP and FTP as well as lower-level protocols such as ARP and ICMP. 
+			</p>
+		</article>
+		
+		<article>
+			<h3 id="addresses">Addresses</h3>
+			<p>
+				
+			</p>
+		</article>
+		
+		<article>
+			<h3 id="analogdigitalsignals">Analog &amp; Digital Signals</h3>
+			<p>
+				Analog signals vary continuously and can have many values inside of a range. Digital signals are pulses of voltage &#40;either 1 or 0&#41;.
+			</p>
+			<table width="80%" border="1">
+				<tbody>
+					<tr>
+						<th scope="col">&nbsp;</th>
+						<th scope="col">Analog</th>
+						<th scope="col">Digital</th>
+					</tr>
+					<tr>
+						<th scope="row">Benefits</th>
+						<td>- More variable<br>- Can show data subtleties better</td>
+						<td>- Ideal for data transfer<br>- Maintain quality over large distances</td>
+					</tr>
+					<tr>
+      					<th scope="row">Drawbacks</th>
+     					<td>- Varied &amp; Imprecise<br>- Can have transmission flaws</td>
+      					<td>- Latency<br>- Data can be corrupted</td>
+    				</tr>
+				</tbody>
+			</table>			
+		</article>
+		
+		<article>
+			<h3 id="multiplexing">Multiplexing</h3>
+			<p>There are three types of directional transmission:</p>
+			<dl>
+				<dt><b>Simplex</b></dt><dd>Only one direction</dd>
+				<dt><b>Half-duplex</b></dt><dd>Both directions but only one direction at a time</dd>
+				<dt><b>Full-duplex</b></dt><dd>Transmitted in both directions simultaneously</dd>
+			</dl>
+			<p>Multiplexing allows multiple signals to be combined into a single channel and transmitted togther. It is mostly used in telecommunications.</p>
+		</article>
+		
+		<article>
+			<h3 id="ethernet">Ethernet</h3>
+			<p>
+				Ethernet has been hugely popular due to the its simplicity, ease of integration and because it is inexpensive.
+				<br><br>
+				Switching is used in networks to create connections between multiple devices. There are three types of switching:
+			</p>
+			<dl>
+				<dt><b>Circuit</b></dt><dd>Connection established before transmission. Data follows a dedicated route.</dd>
+				<dt><b>Message</b></dt><dd>Connection established then broken after transmission. Information is stroed then forwarded to next device.</dd>
+				<dt><b>Packet</b></dt><dd>Used by Ethernet &amp; Internet. Data broken into smaller packets which can take any route to the destination, where the data is reassembled</dd>
+			</dl>
+		</article>
+		
+		<article>
+			<h3 id="routing">Routing</h3>
+			<p>
+				All hosts and interfaces have the same Network ID &#40;prefix&#41; but a unique IP address &#40;suffix&#41;. A router is required to connect to other networks as it acts as the defualt gateway for data to pass between networks.
+			</p>
+			<p>
+				IPv4 uses a 32-bit number represented in dotted decimal to address devices. <em>E.g. 192.168.0.1</em><br>
+				IPv6 uses a 128-bit address which is represented in hexadecimal. <em>E.g. 0:0:0:0:0:0:0:1</em>
+			</p>
+		</article>
+		
+		<article>
+			<h3 id="udptcp">UDP &amp; TCP</h3>
+			<p>
+				UDP is an unreliable, unordered delivery of packets and provides fragmentation and reassembly, multiplexing and error detection.<br><br>
+				TCP is reliable and in-order delivery of packets using all of UDP plus reliable data transfer.
+			</p>
+		</article>
+		
+		<article>
+			<h3 id="dnsnat">DNS &amp; NAT</h3>
+			<p>
+				DNS allows textual web addresses to be mapped to IP addresses. An example of using DNS would be naviagting to <em>www.google.co.uk</em> in your web browser. You are connecting to an IP server address which is hidden behing Google's URL.<br><br>
+				NAT enables private IP addresses to connect to public networks. For example, your home network has one public IP address for all your home devices.
+			</p>
+		</article>
+	
+	</div>
+	
+	<footer>by Kieran Widdowson</footer>
+	
+</div>
+	
+</body>
+</html>
